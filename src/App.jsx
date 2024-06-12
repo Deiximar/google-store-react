@@ -1,5 +1,14 @@
+import NavLinks from "./components/nav/NavLinks.jsx"
+
 function App() {
-  return <></>;
+  return  (
+  
+    
+  <NavLinks/>
+
+  )
+ 
 }
+
 
 export default App;
