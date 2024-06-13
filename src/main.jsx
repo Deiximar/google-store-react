@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import "./components/nav/nav.css";
 import "./components/footer/footer.css";
+import "./components/products/product.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
