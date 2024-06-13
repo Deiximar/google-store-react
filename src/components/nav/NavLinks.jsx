@@ -1,5 +1,7 @@
 import Button from "../buttons/Button.jsx";
-import navStyles from "./nav.module.css";
+import Icon from "../icons/Icon";
+
+import googleLogo from "../../assets/icons/google-logo.png";
 
 const links = [
   {
@@ -35,6 +37,15 @@ const NavLinks = () => {
     </li>
   ));
 
-  return <ul className={navStyles.navBar}>{listItems}</ul>;
+  return (
+    <nav className="menu-nav">
+      <Icon
+        name={googleLogo}
+        describe="Google Logo"
+        classNameProp="google-logo"
+      />
+      <ul className="navBar">{listItems}</ul>
+    </nav>
+  );
 };
 export default NavLinks;
