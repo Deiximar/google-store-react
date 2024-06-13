@@ -1,12 +1,10 @@
 import NavBar from "./components/nav/NavBar.jsx";
-import Legal from "./components/footer/Legal.jsx";
-import SocialIcons from "./components/footer/SocialIcons.jsx";
+import Footer from "./components/footer/Footer.jsx";
 function App() {
   return (
     <div>
       <NavBar />
-      <Legal/>
-      <SocialIcons/>
+      <Footer />
     </div>
   );
 }
