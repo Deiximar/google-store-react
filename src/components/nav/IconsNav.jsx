@@ -6,7 +6,7 @@ import Avatar from "../../assets/icons/Avatar.svg";
 
 const IconsNav = () => {
   return (
-    <div>
+    <div className="nav-icons">
       <Icon name={Search} describe="Search Icon"></Icon>
       <Icon name={Help} describe="Help Icon"></Icon>
       <Icon name={Cart} describe="Cart Icon"></Icon>
