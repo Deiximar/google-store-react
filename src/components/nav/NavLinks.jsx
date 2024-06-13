@@ -1,18 +1,43 @@
 import Button from "./buttons/Button.jsx"
+import navStyles from "../nav/nav.module.css"
+
+const links = [
+    {
+        link: "Phones",
+        url: "#"
+    },
+    {
+        link: "Earbuds",
+        url: "#"
+    },
+    {
+        link: "Watches",
+        url: "#"
+    },
+    {
+        link: "Smart Home",
+        url: "#"
+    },
+    {
+        link: "Accesories",
+        url: "#"
+    },
+    {
+        link: "Subscriptions",
+        url: "#"
+    },
+]
 
 const NavLinks = () => {
+    const listItems = links.map(link =>
+
+        <li><Button linkButton={link} /></li>
+    )
 
     return (
-        <div>
-
-        <Button text="Phones"/>
-        <Button text="Earbuds"/>
-        <Button text="Watches"/>
-        <Button text="Smart Home"/>
-        <Button text="Accesories"/>
-        <Button text="Subscriptions"/>
-
-        </div>
+        <ul className={navStyles.navBar}>
+            {listItems}
+        </ul>
     )
 }
 export default NavLinks

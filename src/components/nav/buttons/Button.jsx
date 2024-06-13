@@ -1,8 +1,9 @@
+import "../nav.module.css"
 
-const Button = ({text}) => {
+const Button = ({ linkButton }) => {
 
     return (
-<a href="#">{text}</a>
+        <a href={linkButton.url}>{linkButton.link}</a>
     )
 }
 
