@@ -1,8 +1,8 @@
-import Button from "../buttons/Button.jsx"
-import Icon from "../icons/Icon.jsx"
-import spainFlag from "../../assets/icons/Spain.svg"
+import Button from "../buttons/Button.jsx";
+import Icon from "../icons/Icon.jsx";
+import spainFlag from "../../assets/icons/Spain.svg";
 const terms = [
-    {
+  {
     link: "Spain",
     url: "#",
   },
@@ -22,20 +22,19 @@ const terms = [
     link: "Terms of Service",
     url: "#",
   },
-]
+];
 const Legal = () => {
-const termList = terms.map((link) =>(
-
+  const termList = terms.map((link) => (
     <li>
       <Button linkButton={link} />
     </li>
   ));
 
- return (
-<div>
-    <Icon name={spainFlag} describe="Spain flag" classNameProp="flag"/>
-<ul className="moreInformation">{termList}</ul> 
-</div>
- );
-}
-export default Legal
+  return (
+    <div className="moreInformation">
+      <Icon name={spainFlag} describe="Spain flag" classNameProp="flag" />
+      <ul className="termsAndConditions">{termList}</ul>
+    </div>
+  );
+};
+export default Legal;
