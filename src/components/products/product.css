@@ -1,0 +1,85 @@
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    padding: 15px;
+    gap: 20px;
+  }
+  .see-product-details {
+    display: flex;
+    gap: 5px;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  
+  .product {
+    width: 100%;
+  }
+  
+  .contenedor-image {
+    background-image: url("/images/smartwatch/smartwatch_black.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 604px;
+    min-height: 250px;
+    width: 100%;
+    background-color: #f8f9fb;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+  
+  .product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  h1 {
+    color: #343a48;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 20px;
+    color: #343a48;
+    font-weight: bold;
+  }
+  
+  hr {
+    line-height: 100%;
+  }
+  
+  .menu-options {
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 5px;
+  }
+  
+  .options li {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .watch {
+    border: 1px solid #58626b;
+    border-radius: 8px;
+    padding: 20px;
+    width: 135px;
+    height: 135px;
+  }
+  
+  .watch img {
+    height: 61px;
+  }
