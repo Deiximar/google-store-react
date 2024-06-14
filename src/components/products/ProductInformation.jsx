@@ -1,4 +1,5 @@
 import Description from "./Description.jsx";
+import Watches from "./watches/Watches.jsx";
 const products = [
     {
         title: "Fitbit Inspire 3",
@@ -16,6 +17,7 @@ const ProductInformation = () => {
     return (
         <section className="productInformation">
             <Description title={product.title} category={product.category} price={product.price} />
+            <Watches/>
         </section>
     )
 }
