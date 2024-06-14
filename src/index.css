@@ -1,31 +1,33 @@
 :root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: "liga" 1, "calt" 1;
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
   }
-  @supports (font-variation-settings: normal) {
-    :root {
-      font-family: InterVariable, sans-serif;
-    }
-  }
-  
-  * {
-    box-sizing: border-box;
-    font-family: Inter;
-    font-size: 1rem;
-    color: #58626b;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html,
-  body {
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  body {
-    min-height: 100vh;
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
-  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter;
+  font-size: 1rem;
+  color: #58626b;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+}
