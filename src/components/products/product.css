@@ -18,7 +18,7 @@ main {
     width: 100%;
   }
   
-  .contenedor-image {
+  .image-container {
     background-image: url("/images/smartwatch/smartwatch_black.png");
     background-repeat: no-repeat;
     background-position: center;
