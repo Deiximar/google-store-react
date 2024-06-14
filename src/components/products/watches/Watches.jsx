@@ -1,7 +1,7 @@
 import ImageWatch from "./ImageWatch";
-import blackSmartwatch from "../../../assets/images/smartwatch_black.png";
-import pinkSmartwatch from "../../../assets/images/smartwatch_pink.png";
-import yellowSmartwatch from "../../../assets/images/smartwatch_yellow.png";
+import blackSmartwatch from "../../../assets/images/watches/smartwatch_black.png";
+import pinkSmartwatch from "../../../assets/images/watches/smartwatch_pink.png";
+import yellowSmartwatch from "../../../assets/images/watches/smartwatch_yellow.png";
 
 const WatchesList = [
   {
