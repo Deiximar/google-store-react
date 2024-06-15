@@ -1,4 +1,8 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 import EarbudsPage from "./pages/EarbudsPage";
 import WatchesPage from "./pages/WatchesPage";
 import CartPage from "./pages/CartPage";
@@ -6,7 +10,7 @@ import CartPage from "./pages/CartPage";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <WatchesPage />,
+    element: <Navigate to="/earbuds-page" />,
   },
   {
     path: "earbuds-page",
