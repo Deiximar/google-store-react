@@ -1,49 +1,52 @@
-import Button from "../buttons/Button.jsx";
 import Icon from "../icons/Icon";
+import { Link } from "react-router-dom";
 
 import googleLogo from "../../assets/icons/google-logo.png";
 
 const links = [
   {
-    link: "Phones",
-    url: "#",
+    text: "Phones",
+    path: "#",
   },
   {
-    link: "Earbuds",
-    url: "#",
+    text: "Earbuds",
+    path: "/earbuds-page",
   },
   {
-    link: "Watches",
-    url: "#",
+    text: "Watches",
+    path: "/watches-page",
   },
   {
-    link: "Smart Home",
-    url: "#",
+    text: "Smart Home",
+    path: "#",
   },
   {
-    link: "Accesories",
-    url: "#",
+    text: "Accesories",
+    path: "#",
   },
   {
-    link: "Subscriptions",
-    url: "#",
+    text: "Subscriptions",
+    path: "#",
   },
 ];
 
 const NavLinks = () => {
   const listItems = links.map((link) => (
     <li>
-      <Button linkButton={link} />
+      <Link to={link.path}>{link.text}</Link>
     </li>
   ));
 
   return (
     <nav className="menu-nav">
-      <Icon
-        name={googleLogo}
-        describe="Google Logo"
-        classNameProp="google-logo"
-      />
+      <Link to="/">
+        <Icon
+          name={googleLogo}
+          describe="Google Logo"
+          classNameProp="google-logo"
+        />
+      </Link>
+
       <ul className="navBar">{listItems}</ul>
     </nav>
   );

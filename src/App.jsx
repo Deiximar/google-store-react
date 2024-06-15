@@ -1,15 +1,29 @@
-import NavBar from "./components/nav/NavBar.jsx";
-import Footer from "./components/footer/Footer.jsx";
-import Product from "./components/products/Product.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import EarbudsPage from "./pages/EarbudsPage";
+import WatchesPage from "./pages/WatchesPage";
+import CartPage from "./pages/CartPage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <WatchesPage />,
+  },
+  {
+    path: "earbuds-page",
+    element: <EarbudsPage />,
+  },
+  {
+    path: "watches-page",
+    element: <WatchesPage />,
+  },
+  {
+    path: "cart-page",
+    element: <CartPage />,
+  },
+]);
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-      <Product />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
