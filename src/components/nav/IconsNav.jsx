@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Icon from "../icons/Icon.jsx";
+import CartIcon from "../../assets/icons/CartIcon.jsx";
 import search from "../../assets/icons/Search.svg";
 import help from "../../assets/icons/Help.svg";
-import cart from "../../assets/icons/Cart.svg";
 import avatar from "../../assets/icons/Avatar.svg";
 
 const IconsNav = () => {
@@ -10,9 +10,9 @@ const IconsNav = () => {
     <div className="nav-icons">
       <Icon name={search} describe="Search Icon"></Icon>
       <Icon name={help} describe="Help Icon"></Icon>
-      <Link to="/cart-page">
-        <Icon name={cart} describe="Cart Icon"></Icon>
-      </Link>
+      <NavLink to="/cart-page">
+        <CartIcon />
+      </NavLink>
       <Icon name={avatar} describe="Avatar Icon"></Icon>
     </div>
   );

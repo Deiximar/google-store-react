@@ -1,39 +1,47 @@
 import Icon from "../icons/Icon";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import googleLogo from "../../assets/icons/google-logo.png";
 
 const links = [
   {
     text: "Phones",
-    path: "#",
+    path: "/phones",
+    disabled: true,
   },
   {
     text: "Earbuds",
     path: "/earbuds-page",
+    disabled: false,
   },
   {
     text: "Watches",
     path: "/watches-page",
+    disabled: false,
   },
   {
     text: "Smart Home",
-    path: "#",
+    path: "/smart-home",
+    disabled: true,
   },
   {
     text: "Accesories",
-    path: "#",
+    path: "/accesories",
+    disabled: true,
   },
   {
     text: "Subscriptions",
-    path: "#",
+    path: "subscriptions",
+    disabled: true,
   },
 ];
 
 const NavLinks = () => {
   const listItems = links.map((link) => (
     <li>
-      <Link to={link.path}>{link.text}</Link>
+      <NavLink disabled={link.disabled} to={link.path}>
+        {link.text}
+      </NavLink>
     </li>
   ));
 
