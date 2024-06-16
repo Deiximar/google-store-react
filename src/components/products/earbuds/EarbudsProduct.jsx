@@ -11,7 +11,6 @@ const EarbudsProduct = ({ product }) => {
   const handleVariantOnClick = (id) => {
     setVariant(product.variants[id]);
   };
-  console.log(variant);
 
   return (
     <main>
@@ -33,7 +32,7 @@ const EarbudsProduct = ({ product }) => {
             variants={product.variants}
             onClick={handleVariantOnClick}
           />
-          <AddCart price={product.price} />
+          <AddCart product={product} variant={variant} />
         </section>
       </section>
     </main>

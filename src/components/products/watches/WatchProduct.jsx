@@ -34,7 +34,7 @@ const WatchProduct = ({ product }) => {
             variants={product.variants}
             onClick={handleVariantOnClick}
           />
-          <AddCart price={product.price} />
+          <AddCart product={product} variant={variant} />
         </section>
       </section>
     </main>

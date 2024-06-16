@@ -8,12 +8,12 @@ const EarbudsGallery = ({ variant }) => {
   };
 
   const imageList = variant.images.map((image, index) => (
-    <div className="earbud-photo" onClick={() => handleGalleryOnClick(index)}>
-      <img
-        key={image.id}
-        src={image}
-        alt={`Earbuds in ${variant.color} color`}
-      />
+    <div
+      key={index}
+      className="earbud-photo"
+      onClick={() => handleGalleryOnClick(index)}
+    >
+      <img src={image} alt={`Earbuds in ${variant.color} color`} />
     </div>
   ));
 

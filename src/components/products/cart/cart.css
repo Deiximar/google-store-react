@@ -106,7 +106,11 @@
 
 .products-container hr {
   border: 0.5px solid #8c919e;
+  margin: 0 auto;
   width: 90%;
+}
+.products-container hr:last-of-type {
+  display: none;
 }
 
 .cart-title {
@@ -141,6 +145,7 @@
 .summary-container hr {
   border: 0.5px solid #8c919e;
   width: 80%;
+  margin: 0 auto;
 }
 
 .summary-container h2 {
@@ -224,4 +229,11 @@
 .estimated-monthly,
 .estimated-instalments {
   font-size: 0.7rem;
+}
+
+#empty-cart {
+  width: 100%;
+  height: 100vh;
+  align-content: center;
+  text-align: center;
 }

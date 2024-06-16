@@ -25,7 +25,7 @@ const terms = [
 ];
 const Legal = () => {
   const termList = terms.map((link) => (
-    <li>
+    <li key={link.link}>
       <Button linkButton={link} />
     </li>
   ));
