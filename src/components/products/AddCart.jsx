@@ -1,7 +1,7 @@
 const AddCart = ({ price }) => {
   return (
-    <div className="cart">
-      <p className="total">{price}€</p>
+    <div className="cart-card">
+      <p className="price-cart-card">{price}€</p>
       <hr />
       <div className="cart-buttons">
         <form action="">
@@ -10,7 +10,7 @@ const AddCart = ({ price }) => {
               <select
                 name="quantity"
                 id="quantity-product"
-                className="amount-input"
+                className="quantity-input"
               >
                 <option value="1" defaultValue>
                   1
