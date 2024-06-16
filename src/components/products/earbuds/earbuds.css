@@ -1,0 +1,78 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+    gap: 15px;
+  }
+  
+  .product {
+    display: flex;
+  }
+  
+  .photo {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #57626b;
+    border-radius: 50%;
+    align-content: center;
+  }
+  
+  .photo img {
+    width: 60px;
+  }
+  
+  .contenedor-image {
+    background-image: url(/images/earbuds/earbuds_01.png);
+  }
+  
+  .color {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #57626b;
+    border-radius: 50%;
+  }
+  
+  .blue {
+    background-color: #9ec6ea;
+  }
+  .beige {
+    background-color: #e7e3e0;
+  }
+  .dark-gray {
+    background-color: #4b4b4d;
+  }
+  .light-gray {
+    background-color: #d2d7da;
+  }
+  .green {
+    background-color: #dfe5b7;
+  }
+  .salmon {
+    background-color: #e18472;
+  }
+  
+  .menu-options {
+    margin: 40px 0;
+  }
+  .options {
+    width: fit-content;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .gallery {
+      display: none;
+    }
+    .options {
+      display: flex;
+    }
+    .menu-options {
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .product-information {
+      gap: 10px;
+    }
+  }
