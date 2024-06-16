@@ -12,7 +12,7 @@ const AddCart = ({ price }) => {
                 id="quantity-product"
                 className="amount-input"
               >
-                <option value="1" selected>
+                <option value="1" defaultValue>
                   1
                 </option>
                 <option value="2">2</option>

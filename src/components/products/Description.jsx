@@ -1,13 +1,11 @@
-const Description = ({title, category, price}) => {
+const Description = ({ title, category, price }) => {
   return (
-    <div class="product-description">
+    <div className="product-description">
       <h1>{title}</h1>
-      <p class="category">{category}</p>
-      <p class="price">{price}€</p>
+      <p className="category">{category}</p>
+      <p className="price">{price}€</p>
       <hr />
     </div>
-  )
-}
+  );
+};
 export default Description;
-
-

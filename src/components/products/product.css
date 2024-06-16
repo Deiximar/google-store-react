@@ -22,7 +22,7 @@ main {
 }
 
 .image-container {
-  background-image: url("https://picsum.photos/600"); /*/images/smartwatch/smartwatch_black.png*/
+  background-image: url("https://picsum.photos/600"); /*images/smartwatch/smartwatch_black.png*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -77,6 +77,8 @@ hr {
   padding: 20px;
   width: 135px;
   height: 135px;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .watch img {
