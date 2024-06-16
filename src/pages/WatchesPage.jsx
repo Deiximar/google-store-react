@@ -1,14 +1,15 @@
-import NavBar from "../components/nav/NavBar.jsx";
-import Footer from "../components/footer/Footer.jsx";
-import MainProduct from "../components/products/Product.jsx";
+import NavBar from "../components/nav/NavBar";
+import Footer from "../components/footer/Footer";
+import WatchProduct from "../components/products/watches/WatchProduct.jsx";
+import products from "../data.js";
 
 function WatchesPage() {
   return (
-    <div>
+    <>
       <NavBar />
-      <MainProduct />
+      <WatchProduct product={products[1]} />
       <Footer />
-    </div>
+    </>
   );
 }
 

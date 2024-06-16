@@ -31,14 +31,14 @@ const links = [
   },
   {
     text: "Subscriptions",
-    path: "subscriptions",
+    path: "/subscriptions",
     disabled: true,
   },
 ];
 
 const NavLinks = () => {
   const listItems = links.map((link) => (
-    <li>
+    <li key={link.path}>
       <NavLink disabled={link.disabled} to={link.path}>
         {link.text}
       </NavLink>
