@@ -6,7 +6,7 @@ const WatchesList = ({ variants, onClick }) => {
       <WatchImage
         alt={`Watch in ${watch.color} color`}
         source={watch.images[0]}
-        color={watch.color}
+        color={watch.name}
       />
     </li>
   ));

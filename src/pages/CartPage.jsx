@@ -7,8 +7,8 @@ function CartPage() {
     <>
       <NavBar />
       <main>
-        <h1>CART</h1>
-        <h3>(3 items)</h3>
+        <h1 class="cart-title">CART</h1>
+        <h3 class="cart-items">(3 items)</h3>
         <section className="cart-container">
           <ProductCart />
           <Summary />

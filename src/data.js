@@ -8,35 +8,42 @@ const Products = [
     variants: [
       {
         id: 0,
-        color: "Bay",
+        name: "Bay",
+        color: "blue",
         images: ["/images/earbuds/earbuds_bay_01.png", "/images/earbuds/earbuds_bay_02.png", "/images/earbuds/earbuds_bay_03.png", "/images/earbuds/earbuds_bay_04.png"]
       },
       {
         id: 1,
-        color: "Porcelain",
+        name: "Porcelain",
+        color: "beige",
         images: ["/images/earbuds/earbuds_porcelain_01.png", "/images/earbuds/earbuds_porcelain_02.png", "/images/earbuds/earbuds_porcelain_03.png", "/images/earbuds/earbuds_porcelain_04.png"]
       },
       {
         id: 2,
-        color: "Coral",
-        images: ["/images/earbuds/earbuds_coral_01.png", "/images/earbuds/earbuds_coral_02.png", "/images/earbuds/earbuds_coral_03.png", "/images/earbuds/earbuds_coral_04.png"]
-      },
-      {
-        id: 3,
-        color: "Charcoal",
+        name: "Charcoal",
+        color: "dark-gray",
         images: ["/images/earbuds/earbuds_charcoal_01.png", "/images/earbuds/earbuds_charcoal_02.png", "/images/earbuds/earbuds_charcoal_03.png", "/images/earbuds/earbuds_charcoal_04.png"]
       },
       {
-        id: 4,
-        color: "Fog",
+        id: 3,
+        name: "Fog",
+        color: "light-gray",
         images: ["/images/earbuds/earbuds_fog_01.png", "/images/earbuds/earbuds_fog_02.png", "/images/earbuds/earbuds_fog_03.png", "/images/earbuds/earbuds_fog_04.png"]
       },
       {
-        id: 5,
-        color: "Lemongrass",
+        id: 4,
+        name: "Lemongrass",
+        color: "green",
         images: ["/images/earbuds/earbuds_lemongrass_01.png", "/images/earbuds/earbuds_lemongrass_02.png", "/images/earbuds/earbuds_lemongrass_03.png", "/images/earbuds/earbuds_lemongrass_04.png"]
       },
+      {
+        id: 5,
+        name: "Coral",
+        color: "salmon",
+        images: ["/images/earbuds/earbuds_coral_01.png", "/images/earbuds/earbuds_coral_02.png", "/images/earbuds/earbuds_coral_03.png", "/images/earbuds/earbuds_coral_04.png"]
+      },
     ]
+
 
   },
   {
@@ -47,17 +54,17 @@ const Products = [
     variants: [
       {
         id: 0,
-        color: "Midnight Zen",
+        name: "Midnight Zen",
         images: ["/images/watches/smartwatch_black.png"]
       },
       {
         id: 1,
-        color: "Lilac Bliss",
+        name: "Lilac Bliss",
         images: ["/images/watches/smartwatch_pink.png"]
       },
       {
         id: 2,
-        color: "Morning Glow",
+        name: "Morning Glow",
         images: ["/images/watches/smartwatch_yellow.png"]
       },
     ]

@@ -22,10 +22,6 @@ const EarbudsProduct = ({ product }) => {
       <section className="product-container">
         <section className="product-earbuds">
           <EarbudsGallery variant={variant} />
-          <div
-            className="image-container"
-            style={{ backgroundImage: `url(${variant.images[0]})` }}
-          ></div>
         </section>
         <section>
           <Description
@@ -33,7 +29,10 @@ const EarbudsProduct = ({ product }) => {
             category={product.category}
             price={product.price}
           />
-          <ColorOptions />
+          <ColorOptions
+            variants={product.variants}
+            onClick={handleVariantOnClick}
+          />
           <AddCart price={product.price} />
         </section>
       </section>
