@@ -3,6 +3,7 @@ import Watches from "./watches/Watches.jsx";
 import AddCart from "./AddCart.jsx";
 
 const products = [
+  
   {
     title: "Fitbit Inspire 3",
     category: "Health & Fitness Tracker",
