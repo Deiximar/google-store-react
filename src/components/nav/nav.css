@@ -41,17 +41,22 @@ header {
   display: none;
 }
 
-.active {
-  color: #1a73e9;
-  font-weight: bold;
+a {
+  text-decoration: none;
 }
 
-a:link {
-  text-decoration: none;
-  color: #343a48;
+a[disabled] {
+  pointer-events: none;
 }
-a:visited {
-  color: #343a48;
+
+a:hover,
+a.active {
+  color: #1a73e9;
+}
+
+a:hover svg,
+a.active svg {
+  fill: #1a73e9;
 }
 
 .nav-mobile {

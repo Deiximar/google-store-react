@@ -22,7 +22,7 @@ main {
 }
 
 .image-container {
-  background-image: url("https://picsum.photos/600"); /*/images/smartwatch/smartwatch_black.png*/
+  background-image: url("https://picsum.photos/600"); /*images/smartwatch/smartwatch_black.png*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -77,6 +77,8 @@ hr {
   padding: 20px;
   width: 135px;
   height: 135px;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .watch img {
@@ -113,19 +115,38 @@ hr {
   gap: 15px;
 }
 
+form {
+  display: flex;
+  gap: 10px;
+}
+
+.quantity-select {
+  position: relative;
+}
+
+.quantity-select::after {
+  --size: 0.4rem;
+  content: "";
+  position: absolute;
+  right: 1rem;
+  pointer-events: none;
+}
+
+.quantity-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 50%;
+}
 .amount-input {
   width: 75px;
   height: 50px;
   border-radius: 3px;
   border: 1px solid #343a48;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: #f8f9fb;
-}
-
-.amount-input span {
-  font-size: 18px;
+  padding: 10px;
+  -webkit-appearance: none;
+  cursor: pointer;
 }
 
 .add-cart-button {
@@ -135,6 +156,12 @@ hr {
   color: #ffffff;
   border: 1px solid #1a73e9;
   border-radius: 3px;
+  cursor: pointer;
+}
+.add-cart-button:hover {
+  background-color: #1967c9;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
 }
 
 .delivery-info {

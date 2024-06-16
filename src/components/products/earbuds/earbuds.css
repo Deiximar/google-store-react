@@ -22,10 +22,9 @@
     width: 60px;
   }
   
-  .gallery-container {
-    
-  
-}
+  .contenedor-image {
+    background-image: url(/images/earbuds/earbuds_01.png);
+  }
   
   .color {
     width: 40px;
