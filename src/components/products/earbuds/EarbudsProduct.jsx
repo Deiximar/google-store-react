@@ -1,6 +1,7 @@
 import arrow from "../../../assets/icons/Arrow.svg";
+import EarbudsGallery from "./EarbudsGallery";
 import Description from "../Description.jsx";
-import ColorOptions from "./ColorOptions.jsx" 
+import ColorOptions from "./ColorOptions.jsx";
 import AddCart from "../AddCart.jsx";
 import { useState } from "react";
 
@@ -10,6 +11,7 @@ const EarbudsProduct = ({ product }) => {
   const handleVariantOnClick = (id) => {
     setVariant(product.variants[id]);
   };
+  console.log(variant);
 
   return (
     <main>
@@ -19,6 +21,7 @@ const EarbudsProduct = ({ product }) => {
       </div>
       <section className="productContainer">
         <section className="product">
+          <EarbudsGallery variant={variant} />
           <div
             className="image-container"
             style={{ backgroundImage: `url(${variant.images[0]})` }}
@@ -30,7 +33,7 @@ const EarbudsProduct = ({ product }) => {
             category={product.category}
             price={product.price}
           />
-          <ColorOptions/>
+          <ColorOptions />
           <AddCart price={product.price} />
         </section>
       </section>
