@@ -1,0 +1,247 @@
+
+ main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 15px;
+    gap: 20px;
+    font-family: "inter", sans-serif;
+    font-size: 0.95rem;
+  }
+  
+  .image1 {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .buds {
+    width: 150px;
+  }
+  
+  .image2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .watch {
+    width: 100px;
+  }
+  
+  .products-container {
+    display: flex;
+    flex: 1 1 70%;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    background-color: #f8f9fb;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+  
+  .details-buds {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .details-name {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0;
+  }
+  
+  .details-quantity {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+  }
+  
+  #quantity {
+    border: none;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  
+  .quantity-label {
+    margin-right: 0.5rem;
+  }
+  
+  .details-price {
+    width: calc(50% - 1rem);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    flex: 1 1 auto;
+  }
+  
+  .details-controls {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    padding: 1rem;
+  }
+  .remove {
+    color: #1a73e9;
+    font-weight: bold;
+    border: 0;
+    text-decoration: underline;
+    background-color: #f8f9fb;
+  }
+  
+  .details-delivery {
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    background: #fff;
+    border-radius: 0.5rem;
+    color: #343a48;
+  }
+  
+  .delivery-logo {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+  .info1,
+  .info2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1rem;
+  }
+  
+  .products-container hr {
+    border: 0.5px solid #8c919e;
+    width: 90%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #343a48;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  h3 {
+    text-align: center;
+    color: #343a48;
+  }
+  
+  .price {
+    font-size: 20px;
+    color: #343a48;
+    font-weight: bold;
+  }
+  
+  .cart {
+    flex: 1 1 40%;
+    background-color: #f8f9fb;
+    border-radius: 20px;
+    padding: 25px;
+    color: #343a48;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    height: fit-content;
+  }
+  
+  .cart hr {
+    border: 0.5px solid #8c919e;
+    width: 80%;
+  }
+  
+  .cart h2 {
+    margin: 0rem 1rem 2rem 1rem;
+    font-family: "inter", sans-serif;
+  }
+  
+  .order-summary {
+    padding: 0 2rem;
+  }
+  
+  .order-subtotal,
+  .order-shipping,
+  .order-vat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .subtotal-title,
+  .shipping-title,
+  .vat-title {
+    display: flex;
+    width: 50%;
+    font-weight: bold;
+  }
+  
+  .subtotal-amount,
+  .shipping-amount,
+  .vat-amount {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  
+  .cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .add-cart-button {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    background-color: #1a73e9;
+    color: #ffffff;
+    border: 1px solid #1a73e9;
+    border-radius: 0.35rem;
+    font-family: "inter", sans-serif;
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .order-estimated {
+    padding: 1rem 2rem;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .estimated-title {
+    display: flex;
+    font-weight: bold;
+    flex: 1 1 40%;
+    justify-content: flex-start;
+  }
+  
+  .estimated-details {
+    display: flex;
+    flex: 1 1 51%;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  
+  .estimated-total {
+    margin-bottom: 0.5rem;
+  }
+  
+  .estimated-monthly,
+  .estimated-instalments {
+    font-size: 0.7rem;
+  }
+  
+  
