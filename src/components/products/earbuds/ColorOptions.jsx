@@ -1,8 +1,10 @@
-const colors = ["blue", "beige", "dark-gray", "light-gray", "green", "salmon"];
-const ColorOptions = () => {
-  const colorList = colors.map((color, index) => (
-    <li key={index}>
-      <button className={`${color}, earbud-color`}> </button>
+const ColorOptions = ({ variants, onClick }) => {
+  const colorList = variants.map((variant) => (
+    <li key={variant.id}>
+      <button
+        className={`${variant.color} earbud-color`}
+        onClick={() => onClick(variant.id)}
+      ></button>
     </li>
   ));
 

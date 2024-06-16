@@ -109,13 +109,13 @@
   width: 90%;
 }
 
-h1 {
+.cart-title {
   text-align: center;
   color: #343a48;
   font-size: 35px;
   font-weight: bold;
 }
-h3 {
+.cart-items {
   text-align: center;
   color: #343a48;
 }

@@ -1,6 +1,14 @@
+import { useState } from "react";
+
 const EarbudsGallery = ({ variant }) => {
-  const image = variant.images.map((image) => (
-    <div className="earbud-photo">
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const handleGalleryOnClick = (index) => {
+    setSelectedIndex(index);
+  };
+
+  const imageList = variant.images.map((image, index) => (
+    <div className="earbud-photo" onClick={() => handleGalleryOnClick(index)}>
       <img
         key={image.id}
         src={image}
@@ -9,6 +17,14 @@ const EarbudsGallery = ({ variant }) => {
     </div>
   ));
 
-  return <div className="gallery">{image}</div>;
+  return (
+    <>
+      <div className="gallery">{imageList}</div>
+      <div
+        className="image-container"
+        style={{ backgroundImage: `url(${variant.images[selectedIndex]})` }}
+      ></div>
+    </>
+  );
 };
 export default EarbudsGallery;
