@@ -17,8 +17,8 @@ const WatchProduct = ({ product }) => {
         <img className="icon" alt="Back Icon" src={arrow} />
         <p>See product details</p>
       </div>
-      <section className="productContainer">
-        <section className="product">
+      <section className="product-container">
+        <section className="product-watch">
           <div
             className="image-container"
             style={{ backgroundImage: `url(${variant.images[0]})` }}

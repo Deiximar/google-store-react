@@ -19,8 +19,8 @@ const EarbudsProduct = ({ product }) => {
         <img className="icon" alt="Back Icon" src={arrow} />
         <p>See product details</p>
       </div>
-      <section className="productContainer">
-        <section className="product">
+      <section className="product-container">
+        <section className="product-earbuds">
           <EarbudsGallery variant={variant} />
           <div
             className="image-container"

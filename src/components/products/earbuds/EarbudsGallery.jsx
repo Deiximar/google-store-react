@@ -1,6 +1,6 @@
 const EarbudsGallery = ({ variant }) => {
   const image = variant.images.map((image) => (
-    <div className="photo">
+    <div className="earbud-photo">
       <img
         key={image.id}
         src={image}
