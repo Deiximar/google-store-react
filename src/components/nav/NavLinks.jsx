@@ -1,5 +1,6 @@
 import Icon from "../icons/Icon";
 import { Link, NavLink } from "react-router-dom";
+import navStyles from "./nav.module.css";
 
 import googleLogo from "../../assets/icons/google-logo.png";
 
@@ -46,16 +47,16 @@ const NavLinks = () => {
   ));
 
   return (
-    <nav className="menu-nav">
+    <nav className={navStyles.menuNav}>
       <Link to="/">
         <Icon
           name={googleLogo}
           describe="Google Logo"
-          classNameProp="google-logo"
+          className={navStyles.googleLogo}
         />
       </Link>
 
-      <ul className="navBar">{listItems}</ul>
+      <ul className={navStyles.navBar}>{listItems}</ul>
     </nav>
   );
 };
