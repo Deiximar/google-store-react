@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocalStorage } from "../../utils/useLocalStorage.js";
 import productStyles from "./product.module.css";
+import deliveryIcon from "../../assets/icons/Delivery.svg";
 
 const AddCart = ({ product, variant }) => {
   const [quantity, setQuantity] = useState(1);
@@ -78,8 +79,8 @@ const AddCart = ({ product, variant }) => {
       <div className={productStyles.deliveryInfo}>
         <img
           className={productStyles.icon}
-          alt="Icono Delivery"
-          src="../../../src/assets/icons/Delivery.svg"
+          alt="Delivery Icon"
+          src={deliveryIcon}
         />
         <p>
           Delivery 29 Apr to <span>08023</span>
