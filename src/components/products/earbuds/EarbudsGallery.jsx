@@ -1,3 +1,4 @@
+import productStyles from "../product.module.css";
 import { useState } from "react";
 
 const EarbudsGallery = ({ variant }) => {
@@ -8,20 +9,20 @@ const EarbudsGallery = ({ variant }) => {
   };
 
   const imageList = variant.images.map((image, index) => (
-    <div className="earbud-photo" onClick={() => handleGalleryOnClick(index)}>
-      <img
-        key={image.id}
-        src={image}
-        alt={`Earbuds in ${variant.color} color`}
-      />
+    <div
+      key={index}
+      className={productStyles.earbudPhoto}
+      onClick={() => handleGalleryOnClick(index)}
+    >
+      <img src={image} alt={`Earbuds in ${variant.color} color`} />
     </div>
   ));
 
   return (
     <>
-      <div className="gallery">{imageList}</div>
+      <div className={productStyles.gallery}>{imageList}</div>
       <div
-        className="image-container"
+        className={productStyles.imageContainer}
         style={{ backgroundImage: `url(${variant.images[selectedIndex]})` }}
       ></div>
     </>

@@ -1,19 +1,12 @@
 import NavBar from "../components/nav/NavBar";
 import Footer from "../components/footer/Footer";
-import ProductCart from "../components/products/cart/ProductCart.jsx";
-import Summary from "../components/products/cart/Summary.jsx";
+import Cart from "../components/products/cart/Cart.jsx";
+//import EmptyCart from "../components/products/cart/EmptyCart.jsx";
 function CartPage() {
   return (
     <>
       <NavBar />
-      <main>
-        <h1 class="cart-title">CART</h1>
-        <h3 class="cart-items">(3 items)</h3>
-        <section className="cart-container">
-          <ProductCart />
-          <Summary />
-        </section>
-      </main>
+      <Cart />
       <Footer />
     </>
   );

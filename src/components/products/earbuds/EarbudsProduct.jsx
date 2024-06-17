@@ -4,6 +4,7 @@ import Description from "../Description.jsx";
 import ColorOptions from "./ColorOptions.jsx";
 import AddCart from "../AddCart.jsx";
 import { useState } from "react";
+import productStyles from "../product.module.css";
 
 const EarbudsProduct = ({ product }) => {
   const [variant, setVariant] = useState(product.variants[0]);
@@ -11,16 +12,15 @@ const EarbudsProduct = ({ product }) => {
   const handleVariantOnClick = (id) => {
     setVariant(product.variants[id]);
   };
-  console.log(variant);
 
   return (
     <main>
-      <div className="see-product-details">
-        <img className="icon" alt="Back Icon" src={arrow} />
+      <div className={productStyles.seeProductDetails}>
+        <img className={productStyles.icon} alt="Back Icon" src={arrow} />
         <p>See product details</p>
       </div>
-      <section className="product-container">
-        <section className="product-earbuds">
+      <section className={productStyles.productContainer}>
+        <section className={productStyles.productEarbuds}>
           <EarbudsGallery variant={variant} />
         </section>
         <section>
@@ -33,7 +33,7 @@ const EarbudsProduct = ({ product }) => {
             variants={product.variants}
             onClick={handleVariantOnClick}
           />
-          <AddCart price={product.price} />
+          <AddCart product={product} variant={variant} />
         </section>
       </section>
     </main>

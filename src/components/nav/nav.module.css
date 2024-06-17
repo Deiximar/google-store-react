@@ -1,4 +1,4 @@
-.google-logo {
+.googleLogo {
   width: 40px;
   height: 40px;
 }
@@ -12,7 +12,7 @@ header {
   flex-wrap: wrap;
 }
 
-.menu-nav {
+.menuNav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -29,14 +29,18 @@ header {
   list-style: none;
 }
 
-.nav-icons {
+.navIcons {
   display: flex;
   justify-content: space-between;
   height: 25px;
   gap: 25px;
 }
 
-.menu-icon,
+.navIcons a {
+  position: relative;
+}
+
+.menuIcon,
 .menu {
   display: none;
 }
@@ -59,14 +63,14 @@ a.active svg {
   fill: #1a73e9;
 }
 
-.nav-mobile {
+.navMobile {
   width: 100%;
   display: none;
 }
-.menu:checked + .nav-mobile {
+.menu:checked + .navMobile {
   height: calc(100vh - 60px);
 }
-.nav-mobile .nav-bar {
+.navMobile .navBar {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -76,14 +80,28 @@ a.active svg {
   margin-left: 0;
 }
 
+.badge {
+  background-color: #f44336;
+  color: #fff;
+  height: 15px;
+  width: 15px;
+  align-content: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  text-align: center;
+  border-radius: 100%;
+  font-size: small;
+}
+
 @media screen and (max-width: 722px) {
   header {
     position: relative;
   }
-  .nav-desktop {
+  .navDesktop {
     display: none;
   }
-  .nav-mobile {
+  .navMobile {
     display: block;
     height: 0;
     width: 100%;
@@ -94,12 +112,12 @@ a.active svg {
     margin: 0;
     overflow: hidden;
   }
-  .nav-mobile .nav-bar li,
-  .nav-mobile .nav-bar a {
+  .navMobile .navBar li,
+  .navMobile .navBar a {
     font-size: 32px;
     font-weight: bold;
   }
-  .nav-icons {
+  .navIcons {
     height: 22px;
     gap: 25px;
     margin-right: 10px;

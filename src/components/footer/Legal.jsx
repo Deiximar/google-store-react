@@ -1,6 +1,8 @@
 import Button from "../buttons/Button.jsx";
 import Icon from "../icons/Icon.jsx";
 import spainFlag from "../../assets/icons/Spain.svg";
+import footerStyles from "./footer.module.css";
+
 const terms = [
   {
     link: "Spain",
@@ -25,15 +27,19 @@ const terms = [
 ];
 const Legal = () => {
   const termList = terms.map((link) => (
-    <li>
+    <li key={link.link}>
       <Button linkButton={link} />
     </li>
   ));
 
   return (
-    <div className="moreInformation">
-      <Icon name={spainFlag} describe="Spain flag" classNameProp="flag" />
-      <ul className="termsAndConditions">{termList}</ul>
+    <div className={footerStyles.moreInformation}>
+      <Icon
+        name={spainFlag}
+        describe="Spain flag"
+        className={footerStyles.flag}
+      />
+      <ul className={footerStyles.termsAndConditions}>{termList}</ul>
     </div>
   );
 };

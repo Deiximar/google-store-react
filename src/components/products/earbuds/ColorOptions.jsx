@@ -1,18 +1,20 @@
+import productStyles from "../product.module.css";
+import "../product.module.css";
 const ColorOptions = ({ variants, onClick }) => {
   const colorList = variants.map((variant) => (
     <li key={variant.id}>
       <button
-        className={`${variant.color} earbud-color`}
+        className={productStyles.earbudColor}
+        style={{ backgroundColor: variant.color }}
         onClick={() => onClick(variant.id)}
       ></button>
     </li>
   ));
 
-  console.log(colorList);
   return (
-    <div className="earbud-menu-options">
+    <div className={productStyles.earbudMenuOptions}>
       <p>Choose a color</p>
-      <ul className="earbud-variants">{colorList}</ul>
+      <ul className={productStyles.earbudVariants}>{colorList}</ul>
     </div>
   );
 };
