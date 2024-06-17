@@ -17,7 +17,10 @@ const IconsNav = () => {
     <div className={navStyles.navIcons}>
       <Icon name={search} describe="Search Icon"></Icon>
       <Icon name={help} describe="Help Icon"></Icon>
-      <NavLink to="/cart-page">
+      <NavLink
+        to="/cart-page"
+        className={({ isActive }) => (isActive ? navStyles.active : "")}
+      >
         <CartIcon />
         {cartProducts.length > 0 && (
           <p className={navStyles.badge}>{totalQuantity}</p>

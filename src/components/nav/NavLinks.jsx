@@ -40,7 +40,11 @@ const links = [
 const NavLinks = () => {
   const listItems = links.map((link) => (
     <li key={link.path}>
-      <NavLink disabled={link.disabled} to={link.path}>
+      <NavLink
+        disabled={link.disabled}
+        className={({ isActive }) => (isActive ? navStyles.active : "")}
+        to={link.path}
+      >
         {link.text}
       </NavLink>
     </li>
