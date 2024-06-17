@@ -8,28 +8,28 @@ main {
   gap: 20px;
 }
 
-.see-product-details {
+.seeProductDetails {
   display: flex;
   gap: 5px;
   margin-bottom: 10px;
 }
 
-.product-container {
+.productContainer {
   display: flex;
   gap: 25px;
 }
-.product-watch,
-.product-earbuds {
+.productWatch,
+.productEarbuds {
   width: 100%;
   display: grid;
 }
 
-.product-earbuds {
+.productEarbuds {
   grid-template-columns: 1fr 6fr;
   height: fit-content;
 }
 
-.image-container {
+.imageContainer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -39,7 +39,7 @@ main {
   border-radius: 15px;
 }
 
-.product-description {
+.productDescription {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -62,19 +62,19 @@ hr {
 }
 
 /*Watch*/
-.watch-menu-options {
+.watchMenuOptions {
   width: 100%;
   margin-top: 40px;
 }
 
-.watch-variants {
+.watchVariants {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   gap: 5px;
 }
 
-.watch-variants li {
+.watchVariants li {
   list-style: none;
   text-align: center;
 }
@@ -106,7 +106,7 @@ hr {
   gap: 15px;
 }
 
-.earbud-photo {
+.earbudPhoto {
   width: 60px;
   height: 60px;
   border: 1px solid #57626b;
@@ -115,16 +115,16 @@ hr {
   cursor: pointer;
 }
 
-.earbud-photo:hover {
+.earbudPhoto:hover {
   border: 1px solid #1a73e9;
   box-shadow: 0px 0px 7px #1a73e9;
 }
 
-.earbud-photo img {
+.earbudPhoto img {
   width: 60px;
 }
 
-.earbud-color {
+.earbudColor {
   width: 40px;
   height: 40px;
   border: 1px solid #57626b;
@@ -132,46 +132,27 @@ hr {
   cursor: pointer;
 }
 
-.earbud-menu-options {
+.earbudMenuOptions {
   width: 100%;
   margin: 40px 0;
 }
-.earbud-variants {
+.earbudVariants {
   width: fit-content;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   gap: 5px;
 }
-.earbud-variants li {
+.earbudVariants li {
   list-style: none;
   text-align: center;
 }
-.earbud-variants li button:hover {
+.earbudVariants li button:hover {
   border: 1px solid #1a73e9;
   box-shadow: 0px 0px 4px #1a73e9;
 }
 
-.blue {
-  background-color: #9ec6ea;
-}
-.beige {
-  background-color: #e7e3e0;
-}
-.dark-gray {
-  background-color: #4b4b4d;
-}
-.light-gray {
-  background-color: #d2d7da;
-}
-.green {
-  background-color: #dfe5b7;
-}
-.salmon {
-  background-color: #e18472;
-}
-
-.cart-card {
+.cartCard {
   width: 100%;
   height: 315px;
   background-color: #f8f9fb;
@@ -185,18 +166,18 @@ hr {
   min-width: 300px;
 }
 
-.price-cart-card {
+.priceCartCard {
   font-size: 35px;
   font-weight: bold;
   margin: 20px 0;
 }
 
-.cart-card hr {
+.cartCard hr {
   margin-bottom: 20px;
   border: 0.5px solid #343a48;
 }
 
-.cart-buttons {
+.cartButtons {
   display: flex;
   justify-content: space-between;
   gap: 15px;
@@ -207,11 +188,11 @@ form {
   gap: 10px;
 }
 
-.quantity-select {
+.quantitySelect {
   position: relative;
 }
 
-.quantity-select::after {
+.quantitySelect::after {
   --size: 0.4rem;
   content: "";
   position: absolute;
@@ -219,13 +200,13 @@ form {
   pointer-events: none;
 }
 
-.quantity-select::after {
+.quantitySelect::after {
   border-left: var(--size) solid transparent;
   border-right: var(--size) solid transparent;
   border-top: var(--size) solid black;
   top: 50%;
 }
-.quantity-input {
+.quantityInput {
   width: 75px;
   height: 50px;
   border-radius: 3px;
@@ -236,7 +217,7 @@ form {
   cursor: pointer;
 }
 
-.add-cart-button {
+.addCartButton {
   height: 50px;
   width: 275px;
   background-color: #1a73e9;
@@ -245,23 +226,23 @@ form {
   border-radius: 3px;
   cursor: pointer;
 }
-.add-cart-button:hover {
+.addCartButton:hover {
   background-color: #1967c9;
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
     0 1px 3px 1px rgba(60, 64, 67, 0.15);
 }
 
-.delivery-info {
+.deliveryInfo {
   display: flex;
   justify-content: flex-start;
   gap: 5px;
 }
-.delivery-info span {
+.deliveryInfo span {
   color: #1a73e9;
 }
 
 @media screen and (max-width: 425px) {
-  .cart-card {
+  .cartCard {
     margin-top: 0;
   }
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLocalStorage } from "../../utils/useLocalStorage.js";
+import productStyles from "./product.module.css";
 
 const AddCart = ({ product, variant }) => {
   const [quantity, setQuantity] = useState(1);
@@ -48,15 +49,15 @@ const AddCart = ({ product, variant }) => {
   };
 
   return (
-    <div className="cart-card">
-      <p className="price-cart-card">{product.price}€</p>
+    <div className={productStyles.cartCard}>
+      <p className={productStyles.priceCartCard}>{product.price}€</p>
       <hr />
-      <div className="cart-buttons">
+      <div className={productStyles.cartButtons}>
         <label>
-          <div className="quantity-select">
+          <div className={productStyles.quantitySelect}>
             <select
               name="quantity"
-              className="quantity-input"
+              className={productStyles.quantityInput}
               onChange={handleSelectChange}
               value={quantity}
             >
@@ -66,14 +67,17 @@ const AddCart = ({ product, variant }) => {
           </div>
         </label>
         <label>
-          <button className="add-cart-button" onClick={handleAddCartOnClick}>
+          <button
+            className={productStyles.addCartButton}
+            onClick={handleAddCartOnClick}
+          >
             Add to Cart
           </button>
         </label>
       </div>
-      <div className="delivery-info">
+      <div className={productStyles.deliveryInfo}>
         <img
-          className="icon"
+          className={productStyles.icon}
           alt="Icono Delivery"
           src="../../../src/assets/icons/Delivery.svg"
         />

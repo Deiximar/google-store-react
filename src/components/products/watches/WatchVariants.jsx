@@ -1,4 +1,5 @@
 import WatchImage from "./WatchImage.jsx";
+import productStyles from "../product.module.css";
 
 const WatchesList = ({ variants, onClick }) => {
   const WatchItems = variants.map((watch) => (
@@ -11,9 +12,9 @@ const WatchesList = ({ variants, onClick }) => {
     </li>
   ));
   return (
-    <div className="watch-menu-options">
+    <div className={productStyles.watchMenuOptions}>
       <p>Choose a color</p>
-      <ul className="watch-variants">{WatchItems}</ul>
+      <ul className={productStyles.watchVariants}>{WatchItems}</ul>
     </div>
   );
 };

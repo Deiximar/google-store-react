@@ -3,6 +3,7 @@ import Description from "../Description.jsx";
 import WatchVariants from "./WatchVariants.jsx";
 import AddCart from "../AddCart.jsx";
 import { useState } from "react";
+import productStyles from "../product.module.css";
 
 const WatchProduct = ({ product }) => {
   const [variant, setVariant] = useState(product.variants[0]);
@@ -13,14 +14,14 @@ const WatchProduct = ({ product }) => {
 
   return (
     <main>
-      <div className="see-product-details">
-        <img className="icon" alt="Back Icon" src={arrow} />
+      <div className={productStyles.seeProductDetails}>
+        <img className={productStyles.icon} alt="Back Icon" src={arrow} />
         <p>See product details</p>
       </div>
-      <section className="product-container">
-        <section className="product-watch">
+      <section className={productStyles.productContainer}>
+        <section className={productStyles.productWatch}>
           <div
-            className="image-container"
+            className={productStyles.imageContainer}
             style={{ backgroundImage: `url(${variant.images[0]})` }}
           ></div>
         </section>
