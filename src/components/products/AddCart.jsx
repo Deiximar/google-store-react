@@ -10,7 +10,33 @@ const AddCart = ({ product, variant }) => {
   };
 
   const handleAddCartOnClick = () => {
+    const id = `${product.id}-${variant.name}-${variant.id}`;
+
+    const existingProductIndex = cartProducts.findIndex(
+      (item) => item.id === id
+    );
+
+    if (existingProductIndex >= 0) {
+      const existingProduct = cartProducts[existingProductIndex];
+
+      if (existingProduct.quantity + quantity > 2) {
+        alert(
+          "Unfortunately, we couldn't add that to your cart. There are limits on how many you can buy. If you just cancelled an order, you can retry again after the cancellation is complete."
+        );
+
+        return;
+      }
+
+      if (existingProductIndex >= 0) {
+        cartProducts[existingProductIndex].quantity += quantity;
+
+        setCartProducts([...cartProducts]);
+        return;
+      }
+    }
+
     const myData = {
+      id,
       name: product.name,
       variant: variant.name,
       image: variant.images[0],

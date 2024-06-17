@@ -10,6 +10,11 @@ const WatchesList = ({ variants, onClick }) => {
       />
     </li>
   ));
-  return <ul className="watch-variants">{WatchItems}</ul>;
+  return (
+    <div className="watch-menu-options">
+      <p>Choose a color</p>
+      <ul className="watch-variants">{WatchItems}</ul>
+    </div>
+  );
 };
 export default WatchesList;

@@ -8,7 +8,6 @@ const ColorOptions = ({ variants, onClick }) => {
     </li>
   ));
 
-  console.log(colorList);
   return (
     <div className="earbud-menu-options">
       <p>Choose a color</p>
